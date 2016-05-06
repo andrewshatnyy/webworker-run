@@ -1,2 +1,3 @@
 # webworker-run
-sim
+
+Simplified Webworker runner for one off tasks

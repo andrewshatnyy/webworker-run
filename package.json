@@ -1,0 +1,21 @@
+{
+  "name": "webworker-run",
+  "version": "0.1.0",
+  "description": "Webworker runner. Simplifies running tasks on a separate web thread.",
+  "main": "index.js",
+  "scripts": {
+    "test": "$(npm bin)/karma start"
+  },
+  "keywords": [
+    "Webworker"
+  ],
+  "author": "Andrew Shatnyy <AndrewShatnyy@gmail.com> (http://www.andrewshatnyy.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-safari-launcher": "^1.0.0"
+  }
+}
