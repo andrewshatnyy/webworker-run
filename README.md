@@ -3,6 +3,13 @@ Webworker Run
 
 Simplified Webworker runner for one off tasks
 
+Works in browsers supporting listed dependencies.
+
+## Dependencies
+
+* Promise
+* Worker
+
 ## Installation
 
 For now just copy `index.js` from `src` folder to your project
@@ -49,6 +56,7 @@ Stay away from es6 until babel transpiler added.
 
 ## Road-map
 
+* add worker detection
 * add babel builder for packaging
 * come up with safe wrk.done abstraction
 * cleaner /safer Worker(func) parser
