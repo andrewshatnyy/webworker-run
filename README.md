@@ -9,33 +9,33 @@ For now just copy `index.js` from `src` folder to your project
 I am still working on publishing this.
 
 ## Usage
-  // to create a worker pass WebWorker a function
+      // to create a worker pass WebWorker a function
 
-  var worker = WebWorker(function(input) {
-    var to = setTimeout(function() {
-      clearTimeout(to);
-      // wrk -> is a namespace inside worker
-      // wrk.done is an alias for self.postMessage
-      // @todo handle Typed arrays copy
-      wrk.done(input);  
-    }, 1000);
-  });
+      var worker = WebWorker(function(input) {
+        var to = setTimeout(function() {
+          clearTimeout(to);
+          // wrk -> is a namespace inside worker
+          // wrk.done is an alias for self.postMessage
+          // @todo handle Typed arrays copy
+          wrk.done(input);  
+        }, 1000);
+      });
 
-  function success(result) {
-    console.log(result);
-  }
+      function success(result) {
+        console.log(result);
+      }
 
-  function failure(reason) {
-    throw new Error(reason);
-  }
+      function failure(reason) {
+        throw new Error(reason);
+      }
 
-  // worker returns a promise use it for xhrHttpRequest work
+      // worker returns a promise use it for xhrHttpRequest work
 
-  worker.run('arguments').then(success, failure);
+      worker.run('arguments').then(success, failure);
 
 ## Tests
 
-  npm test
+      npm test
 
 ## Contributing
 
