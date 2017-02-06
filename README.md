@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/andrewshatnyy/webworker-run.svg?branch=master)](https://travis-ci.org/andrewshatnyy/webworker-run)
+
 Webworker Run
 =========
 
