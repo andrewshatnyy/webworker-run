@@ -10,13 +10,14 @@ module.exports = function(config) {
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
-    frameworks: ['jasmine'],
+    frameworks: ['mocha'],
 
 
     // list of files / patterns to load in the browser
     files: [
         'src/*.js', 
-        'tests/*.js'
+        'tests/*.js',
+        'https://www.promisejs.org/polyfills/promise-6.1.0.js'
     ],
 
 
@@ -56,6 +57,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
+    // browsers: ['Chrome', 'Safari', 'Firefox'],
     browsers: ['Chrome', 'Safari', 'Firefox'],
     proxies: {
       '/text': 'http://www.filltext.com/'

@@ -3,7 +3,7 @@ describe('Worker', function () {
     var worker = WebWorker(function(input) {
       var to = setTimeout(function() {
         clearTimeout(to);
-        wrk.done(input);  
+        wrk.done(input);
       }, 1000);
     });
     worker.run('asdjalksdasd').then(function(result) {

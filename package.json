@@ -4,7 +4,8 @@
   "description": "Webworker runner. Simplifies running tasks on a separate web thread.",
   "main": "index.js",
   "scripts": {
-    "test": "$(npm bin)/karma start"
+    "test": "$(npm bin)/karma start --single-run --browsers PhantomJS",
+    "tests": "$(npm bin)/karma start"
   },
   "keywords": [
     "Webworker"
@@ -15,7 +16,12 @@
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
     "karma-safari-launcher": "^1.0.0"
+  },
+  "dependencies": {
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "mocha": "^3.2.0",
+    "promise": "^7.1.1"
   }
 }
